@@ -1,0 +1,5 @@
+# custom commands
+alias repos="cd ~/git && pwd"
+
+# git commands
+alias gs="git status"
