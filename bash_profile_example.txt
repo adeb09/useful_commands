@@ -1,0 +1,25 @@
+# .bash_profile
+
+# Get the aliases and functions
+if [ -f ~/.bashrc ]; then
+	. ~/.bashrc
+fi
+
+# User specific environment and startup programs
+
+PATH=$PATH:$HOME/bin:$HOME/Library/Python/3.7/bin
+
+export PATH=/usr/local/bin:$PATH
+export EDITOR='subl -w'
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
+
+export PATH="$HOME/.poetry/bin:$PATH"
+
+
+# load custom aliases
+source ~/.custom_aliases
+
+# only store unique commands in history
+export HISTCONTROL=ignoreboth:erasedups

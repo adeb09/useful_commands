@@ -1,0 +1,12 @@
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
+
+# set a generous max length and size for the history file, and set options
+HISTSIZE=50000
+HISTFILESIZE=500000
+HISTIGNORE='history:clear'
+
+cat $HOME/banner.txt
+screen -list
