@@ -72,3 +72,18 @@
 # Bash commands
 `scp adeb@ConcertoHealth.AI@10.164.1.74:/home/adeb@ConcertoHealth.AI/secret.json ~`
 `scp ~/secret_updated1.json adeb@ConcertoHealth.AI@10.164.1.74:~`
+
+# grep
+`grep Whatyou'relookingfor whatfileyouwanttosearchin`
+
+`man grep` -> grep manual in UNIX
+
+`grep -i` (case insensitive search)
+`grep -n` (line number for each hit in the file)
+* -> any file in the directory to search
+`grep -r` (recursively search directories within current directory and search every file there is)
+`grep -A` 5 lines after
+`grep -B` 5 lines before
+`grep -C` 5 lines around
+`grep blah blah | grep` -> can grep the results of a grep
+`grep blah blah >> ~/file.txt` -> can store results of a grep into a text file
