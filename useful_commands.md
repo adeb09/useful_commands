@@ -80,7 +80,7 @@
 
 `grep -i` (case insensitive search)
 `grep -n` (line number for each hit in the file)
-* -> any file in the directory to search
+`*` -> any file in the directory to search
 `grep -r` (recursively search directories within current directory and search every file there is)
 `grep -A` 5 lines after
 `grep -B` 5 lines before
