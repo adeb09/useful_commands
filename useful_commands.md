@@ -104,3 +104,6 @@
 
 **can store results of a grep into a text file**\
 `grep blah blah >> ~/file.txt`
+
+**to ignore a pattern from grep use this flag (inverted search)**
+grep -v "pattern"
